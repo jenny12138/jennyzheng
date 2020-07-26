@@ -1,2 +1,0 @@
-# jennyzheng
-Github Pages Repository
