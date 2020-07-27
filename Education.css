@@ -34,14 +34,6 @@ header .name
   top: 90x;
 }
 
-header .shortbio
-{
-  font-family: playfair-display,serif;
-  font-weight: 400 !important;
-  font-style: italic !important;
-  position: absolute;
-  top: 160px;
-}
 header .social-nav 
 {
     position: absolute;
@@ -131,7 +123,6 @@ header .navigationBar a:hover
   margin-bottom: 20px;
 }
 
-
 body 
 {
   background: white;
@@ -146,22 +137,6 @@ body
   position: relative;
   max-width: 920px;
   width: 100%;
-  margin: 0 auto;
-}
-
-#conference-timeline .timeline-start,
-#conference-timeline .timeline-end 
-{
-  display: table;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: lowercase;
-  background: rgb(10,186,181);
-  padding: 15px 23px;
-  color: white;
-  max-width: 5%;
-  width: 100%;
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -287,7 +262,26 @@ body
 /*===== // Vertical Timeline =====*/
 
 /*===== Resonsive Vertical Timeline =====*/
-@media only screen and (max-width: 830px) {
+@media only screen and (min-width: 700px) 
+{
+  header .shortbio
+  {
+    display: none;
+  }
+  
+  header .longbio
+  {
+    font-family: playfair-display,serif;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    position: absolute;
+    top: 170px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 700px) 
+{
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
     margin: 0;
@@ -300,12 +294,19 @@ body
     margin-left: 0;
     left: 20px;
   }
+
+  #conference-timeline .conference-timeline-content 
+  {
+    padding-top: 0px;
+    padding-bottom: 67px;
+  }
   .timeline-article .content-left-container,
   .timeline-article .content-right-container {
     max-width: 100%;
     width: auto;
     float: none;
     margin-left: 110px;
+    margin-right: 30px;
     min-height: 53px;
   }
   .timeline-article .content-left-container {
@@ -324,6 +325,92 @@ body
   .timeline-article .content-right:before {
     display: none;
   }
+
+  header 
+  {
+      height: 210px;
+  }
+
+  header .longbio
+  {
+    display: none;
+  }
+
+  header .shortbio
+  {
+    font-family: playfair-display,serif;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    position: absolute;
+    top: 170px;
+    margin: 0 auto;
+  }
+
+  header .navigationBar
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 0 0;
+  }
+
+  header .navigationBar a 
+  {
+    padding: 0px 15px;
+    font-size: 15px;
+  }
+
+  header .navigationBar a:hover 
+  {
+    background: #ddd;
+    color: black;
+  }
+
+  header .name
+  {
+    font-family: playfair-display, serif;
+    font-weight: 900 !important;
+    font-style: italic !important;
+    font-size: 22pt;
+    position: absolute;
+    top: 90x;
+  }
+
+  header .shortbio
+  {
+    font-family: playfair-display,serif;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    position: absolute;
+    top: 110px;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+
+  header .social-nav 
+  {
+      position: absolute;
+      bottom: -23%;
+  }
+    
+  header .social-nav ul li 
+  {
+    display: inline-block; /*Display horizontally*/
+    width: 50px;
+    height: 50px;
+    margin-right: 2em;
+  }
+
+  header .social-nav ul li a 
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
 }
 @media only screen and (max-width: 400px) {
   .timeline-article p {
