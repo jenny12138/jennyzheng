@@ -177,49 +177,6 @@ section.about
   font-size: 9;
 }
 
-.projects 
-{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.projects h1 
-{
-  font-weight: 900 !important;
-  font-style: italic !important;
-  font-size: 18pt;
-  width: 100%;
-  flex-basis: 100%;
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-
-.project 
-{
-  display: block;
-  width: 25%;
-  background: rgba(10,186,181, 0.55);
-  margin-bottom: 20px;
-  height: 200px;
-  position: relative;
-}
-
-.project h5 
-{
-  display: block;
-  background: rgba(0, 0, 0, 0.8);
-  padding: 1em;
-  position: absolute;
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-size: 1em;
-  font-weight: normal;
-  bottom: 0;
-}
-
 footer
 {
   display: flex;
@@ -239,4 +196,120 @@ footer .endnote
   font-size: 8pt;
 }
 
+@media only screen and (max-width: 700px)
+{
+  header 
+  {
+      height: 210px;
+  }
+
+  header .longbio
+  {
+    display: none;
+  }
+
+  header .shortbio
+  {
+    font-family: playfair-display,serif;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    position: absolute;
+    top: 170px;
+    margin: 0 auto;
+  }
+
+  header .navigationBar
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 0 0;
+  }
+
+  header .navigationBar a 
+  {
+    padding: 0px 15px;
+    font-size: 15px;
+  }
+
+  header .navigationBar a:hover 
+  {
+    background: #ddd;
+    color: black;
+  }
+
+  header .name
+  {
+    font-family: playfair-display, serif;
+    font-weight: 900 !important;
+    font-style: italic !important;
+    font-size: 22pt;
+    position: absolute;
+    top: 90x;
+  }
+
+  header .shortbio
+  {
+    font-family: playfair-display,serif;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    position: absolute;
+    top: 110px;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+
+  header .social-nav 
+  {
+      position: absolute;
+      bottom: -23%;
+  }
+    
+  header .social-nav ul li 
+  {
+    display: inline-block; /*Display horizontally*/
+    width: 50px;
+    height: 50px;
+    margin-right: 2em;
+  }
+
+  header .social-nav ul li a 
+  {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 1px solid white;
+  }
+
+  footer
+  {
+    margin-top: 10px;
+  }
+  
+}
+
+@media only screen and (min-width: 700px) 
+{
+  header .shortbio
+  {
+    display: none;
+  }
+  
+  header .longbio
+  {
+    font-family: playfair-display,serif;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    position: absolute;
+    top: 170px;
+    margin: 0 auto;
+  }
+
+  footer
+  {
+    margin-top: 10px;
+  }
+}
 
