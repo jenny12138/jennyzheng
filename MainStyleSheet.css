@@ -140,7 +140,7 @@ section.about
 .AboutMeContent
 {
   background-color: white;
-  display: flex;
+  display: flex; /*Using flexbox*/
   position: relative;
   flex-direction: row;
   justify-content: center; /*Horizontal alignment*/
@@ -157,24 +157,6 @@ section.about
   border: 1px solid rgba(10,186,181, 0.55);
   /*border-radius: 3px;*/
   padding: 3px;
-}
-
-.intro
-{
-  float: right;
-  width:50%;
-  height:300px;
-  box-sizing: content-box;
-  border: 1px solid rgba(10,186,181, 0.55);
-  /*border-radius: 3px;*/
-  padding: 3px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  font-family: playfair-display, serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 9;
 }
 
 footer
@@ -198,6 +180,29 @@ footer .endnote
 
 @media only screen and (max-width: 700px)
 {
+  .AboutMeContent
+  {
+    background-color: white;
+    display: flex; /*Using flexbox*/
+    flex-direction: column;
+    justify-content: space-between; /*Horizontal alignment*/
+    align-items: center; /*Vertical alignment*/
+  }
+
+  .intro
+  {
+    float: right;
+    width:70%;
+    margin-top: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: playfair-display, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9;
+    border: 0px;
+  }
+
   header 
   {
       height: 210px;
@@ -292,6 +297,23 @@ footer .endnote
 
 @media only screen and (min-width: 700px) 
 {
+  .intro
+  {
+    float: right;
+    width:50%;
+    height:300px;
+    box-sizing: content-box;
+    border: 1px solid rgba(10,186,181, 0.55);
+    /*border-radius: 3px;*/
+    padding: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: playfair-display, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 9;
+  }
+
   header .shortbio
   {
     display: none;
