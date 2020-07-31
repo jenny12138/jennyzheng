@@ -123,6 +123,13 @@ header .navigationBar a:hover
   margin-bottom: 10px;
 }
 
+#messageField
+{
+  height: 250px;
+  resize:both;
+  text-align: left;
+}
+
 /*===== // Contact Form =====*/
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea 
@@ -134,11 +141,12 @@ input[type=text], select, textarea
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] 
+
+button[type=submit]
 {
   background-color: rgba(10,186,181, 0.55);
   color: white;
@@ -148,8 +156,7 @@ input[type=submit]
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover 
+button[type=submit]:hover 
 {
   background-color: rgb(10,186,181);
 }
