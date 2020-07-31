@@ -38,26 +38,25 @@
         </nav>
     </header>
 
+
+
+
     <main>
+
+      
         <div class="container">
             <h1 id="contactMe">Contact Me</h1>
-            <form action="action_page.php" action="mailto: jennyzheng2201@gmail.com">
-          
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your first name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <form action="https://formspree.io/xeqrnenz" method="POST">
+                <label for="email"> Your email: <input type="text" id="email" name="_replyto" placeholder="Your email address..."> </label>
 
-              <label for="email">Email Address</label>
-              <input type="text" id="email" name="email" placeholder="Your email..">
+                <label for="fname">First Name: <input type="text" id="fname" name="firstname" placeholder="Your first name..."></label>
+            
+                <label for="lname">Last Name: <input type="text" id="lname" name="lastname" placeholder="Your last name..."></label>
+                
+                <label for="messageField">Message</label><textarea id="messageField" name="subject" placeholder="Your message..." style="height:200px"></textarea>
 
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-          
-            </form>
+                <button type="submit">Send</button>
+              </form>
           </div>
     </main>
 
