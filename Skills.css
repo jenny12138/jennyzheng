@@ -345,14 +345,14 @@ section.AreasOfExperience
 }
 
 .container .card:nth-child(1) .icon {
-  background-image: url(/Users/jennyzheng/Desktop/Website/images/Certificates_Kaggle_Pandas.png);
+  background-image: url(./images/Certificates_Kaggle_Pandas.png);
   background-size: 96%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .container .card:nth-child(2) .icon {
-  background-image: url(/Users/jennyzheng/Desktop/Website/images/CTL.png);
+  background-image: url(./images/CTL.png);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
