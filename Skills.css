@@ -328,6 +328,8 @@ section.AreasOfExperience
 }
 
 .container .card {
+  margin-top: -80px;
+  margin-bottom: -50px;
   position: relative;
   border-radius: 10px;
   border-color: grey;
@@ -344,49 +346,20 @@ section.AreasOfExperience
   z-index: 1;
 }
 
-.container .card:nth-child(1) .icon {
+.container1 .card:nth-child(1) .icon {
   background-image: url(./images/Certificates_Kaggle_Pandas.png);
   background-size: 96%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.container .card:nth-child(2) .icon {
+.container2 .card:nth-child(1) .icon {
   background-image: url(./images/CTL.png);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.container .card:nth-child(3) .icon {
-  background-image: url(https://qph.fs.quoracdn.net/main-qimg-a61c6d772bec0d51891721f38cc0ffb8);
-  background-size: cover;
-}
-
-.container .card:nth-child(4) .icon {
-  background-image: url(https://qph.fs.quoracdn.net/main-qimg-a61c6d772bec0d51891721f38cc0ffb8);
-  background-size: cover;
-}
-
-.container .card:nth-child(5) .icon {
-  background-image: url(https://qph.fs.quoracdn.net/main-qimg-a61c6d772bec0d51891721f38cc0ffb8);
-  background-size: cover;
-}
-
-.container .card:nth-child(6) .icon {
-  background-image: url(https://qph.fs.quoracdn.net/main-qimg-a61c6d772bec0d51891721f38cc0ffb8);
-  background-size: cover;
-}
-
-.container .card:nth-child(7) .icon {
-  background-image: url(https://qph.fs.quoracdn.net/main-qimg-a61c6d772bec0d51891721f38cc0ffb8);
-  background-size: cover;
-}
-
-.container .card:nth-child(8) .icon {
-  background-image: url(https://qph.fs.quoracdn.net/main-qimg-a61c6d772bec0d51891721f38cc0ffb8);
-  background-size: cover;
-}
 
 .container .card .icon .fa {
   position: absolute;
@@ -481,6 +454,7 @@ i {
 
 footer
 {
+  z-index: -100;
   display: flex;
   margin-top: 10px;
   background-image: url("https://images.squarespace-cdn.com/content/v1/5223a766e4b0a07a9893b1cb/1478618020878-SD3K8QJUKS86VRJHLUXF/ke17ZwdGBToddI8pDm48kEH8NjoedwmXMWM1Y05RPZ17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iy8Rj2bPXFyaluz0PeKicM99XUAZZ4vYM9zGDkJVpGPVPvo6NH8fvxWQSfmZeQ4eQ/kathleen+nyn+banner+watercolor+2+medium.jpg?format=1500w");
