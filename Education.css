@@ -68,9 +68,10 @@ header .social-nav ul li a
   border: 3px solid white;
 }
 
-header .social-nav .sn-medium
+header .social-nav .sn-email
 {
-  background: url('./images/medium.svg') no-repeat 50% 50%;
+  background: url('./images/mail.svg') no-repeat 50% 50%;
+  background-size: 50%;
   background-color: #1DA1F2;
 }
 
