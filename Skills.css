@@ -75,9 +75,10 @@ header .social-nav .sn-email
   background-color: #1DA1F2;
 }
 
-header .social-nav .sn-instagram 
+header .social-nav .sn-github
 {
-  background: url('./images/instagram2.svg') no-repeat 50% 50%;
+  background: url('./images/github.svg') no-repeat 55% 50%;
+  background-size: 60%;
   background-color: #E1306C;
 }
 
@@ -229,6 +230,89 @@ header .navigationBar a:hover
 {
   width: 95%
 }
+
+/*
+.lang1[data-scroll="in"] 
+{
+  width: 95%;
+  margin-top: 0; 
+}
+
+.lang2[data-scroll="in"] 
+{
+  width: 80%;
+}
+
+.lang3[data-scroll="in"] 
+{
+  width: 50%;
+}
+
+.lang4[data-scroll="in"] 
+{
+  width: 50%;
+}
+
+.lang5[data-scroll="in"] 
+{
+  width: 80%;
+}
+
+.lang6[data-scroll="in"] 
+{
+  width: 95%;
+}
+
+  
+@keyframes java 
+{
+  0% {
+    width: 0%; }
+  100% {
+    width: 95%; } 
+}
+
+@keyframes python 
+{
+  0% {
+    width: 0%; }
+  100% {
+    width: 80%; } 
+}
+
+@keyframes cplusplus 
+{
+  0% {
+    width: 0%; }
+  100% {
+    width: 50%; } 
+}
+
+@keyframes matlab 
+{
+  0% {
+    width: 0%; }
+  100% {
+    width: 50%; } 
+}
+
+@keyframes octave 
+{
+  0% {
+    width: 0%; }
+  100% {
+    width: 80%; } 
+}
+
+@keyframes htmlcss 
+{
+  0% {
+    width: 0%; }
+  100% {
+    width: 95%; } 
+} 
+
+*/
 
 section.AreasOfExperience
 {
