@@ -114,421 +114,266 @@ header .navigationBar a:hover
   color: black;
 }
 
-#skills-section 
-{
-  list-style: none;
-  background: white;
-  left: 50%;
-}
-
-#skills 
+#education
 {
   font-weight: 900 !important;
   font-style: italic !important;
   font-size: 18pt;
   left:50%;
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-#skills-list-1
+body 
 {
-  top: 0px;
-  left: 0px;
+  background: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
-#header-1
-{
-  text-align: center;
-  margin-bottom: 10px;
-}
 
-.wrapper 
+/*===== Vertical Timeline =====*/
+#conference-timeline 
 {
-  max-width: 4400px;
-  margin: 0 auto;
   position: relative;
-  padding-top: 0; 
-}
-
-@media screen and (max-width: 4400px) 
-{
-    .wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    position: relative;
-    text-align: center; }
-    }
-
-.list 
-{
-  width: 550px;
-  display: inline-block; 
-}
-
-.list li 
-{
-  margin: 20px 0; 
-}
-
-.bar 
-{
-  background: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  display: block;
-  height: 34px;
-  /*border: 1px solid rgba(0, 0, 0, 0.2);*/
-  border-radius: 0px;
-  overflow: hidden;
-  padding: 1px; 
-}
-  
-.bar span 
-{
-  height: 30px;
-  float: left;
-  /*background-image: linear-gradient(to right, rgba(255, 197, 158),rgba(0, 138, 157));*/
-  background-color: rgba(0, 138, 157, 0.8);
-  border-radius: 4px;
-  display: flex;
-  padding: 0 15px;
-  line-height: 35px;
-  color: white; 
-}
-
-.bar .lang1
-{
-  width: 95%
-}
-
-.bar .lang2
-{
-  width: 80%
-}
-
-.bar .lang3
-{
-  width: 50%
-}
-
-.bar .lang4
-{
-  width: 50%
-}
-
-.bar .lang5
-{
-  width: 80%
-}
-
-.bar .lang6
-{
-  width: 95%
-}
-
-/*
-.lang1[data-scroll="in"] 
-{
-  width: 95%;
-  margin-top: 0; 
-}
-
-.lang2[data-scroll="in"] 
-{
-  width: 80%;
-}
-
-.lang3[data-scroll="in"] 
-{
-  width: 50%;
-}
-
-.lang4[data-scroll="in"] 
-{
-  width: 50%;
-}
-
-.lang5[data-scroll="in"] 
-{
-  width: 80%;
-}
-
-.lang6[data-scroll="in"] 
-{
-  width: 95%;
-}
-
-  
-@keyframes java 
-{
-  0% {
-    width: 0%; }
-  100% {
-    width: 95%; } 
-}
-
-@keyframes python 
-{
-  0% {
-    width: 0%; }
-  100% {
-    width: 80%; } 
-}
-
-@keyframes cplusplus 
-{
-  0% {
-    width: 0%; }
-  100% {
-    width: 50%; } 
-}
-
-@keyframes matlab 
-{
-  0% {
-    width: 0%; }
-  100% {
-    width: 50%; } 
-}
-
-@keyframes octave 
-{
-  0% {
-    width: 0%; }
-  100% {
-    width: 80%; } 
-}
-
-@keyframes htmlcss 
-{
-  0% {
-    width: 0%; }
-  100% {
-    width: 95%; } 
-} 
-
-*/
-
-section.AreasOfExperience
-{
-  margin-top: 50px;
-  background-color: white;
-}
-
-#header-2
-{
-  font-weight: 900 !important;
-  font-style: italic !important;
-  font-size: 18pt;
-  left:50%;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-#AreasOfExperience
-{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: space-evenly;
-}
-
-#ExperienceChildren
-{
-  height: 300px;
-  width: 25%;
-  border-style: solid;
-  border-color: white;
-  border-width: 2px;
-}
-
-.container 
-{
+  max-width: 920px;
   width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-content: space-between;
+  margin: 0 auto;
 }
 
-.container .card {
-  margin-top: -50px;
-  margin-bottom: -10px;
-  position: relative;
-  border-radius: 10px;
-  border-color: grey;
-}
-
-.container .card .icon {
+#conference-timeline .conference-center-line 
+{
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 3px;
+  height: 90%;
+  top: 60px;
+  left: 50%;
+  margin-left: -2px;
+  background: rgb(10,186,181);
+  z-index: -1;
+}
+
+#conference-timeline .conference-timeline-content 
+{
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+
+.timeline-article 
+{
   width: 100%;
   height: 100%;
-  background: white;
-  transition: 0.7s;
-  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
 }
-
-.container1
+.timeline-article .content-left-container,
+.timeline-article .content-right-container 
 {
-  display: flex;
-  flex-direction: row;
-  justify-items: space-evenly;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
+  max-width: 44%;
+  width: 100%;
 }
 
-.container1 .card:nth-child(1) .icon {
-  background-image: url(./images/MachineLearning_Coursera.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.container1 .card:nth-child(2) .icon {
-  background-image: url(./images/Certificates_Kaggle_Python.png);
-  background-size: 96%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.container1 .card:nth-child(3) .icon {
-  background-image: url(./images/Certificates_Kaggle_Pandas.png);
-  background-size: 96%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-.container2 .card:nth-child(1) .icon {
-  background-image: url(./images/CTL.png);
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
-.container .card .icon .fa {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  transition: 0.7s;
-  color: #fff;
-}
-
-i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  transition: 0.7s;
-  color: #fff;
-}
-
-.container .card .face {
-  width: 300px;
-  height: 200px;
-  transition: 0.5s;
-}
-
-.container .card .face.face1 {
-  position: relative;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  transform: translateY(100px);
-}
-
-.container .card:hover .face.face1{
-  background: rgba(10,186,181, 0.55);
-  transform: translateY(0px);
-}
-
-.container .card .face.face1 .content {
-  opacity: 1;
-  transition: 0.5s;
-}
-
-.container .card:hover .face.face1 .content {
-  opacity: 1;
-}
-
-.container .card .face.face1 .content i{
-  max-width: 100px;
-}
-
-.container .card .face.face2 {
-  position: relative;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
-  transform: translateY(-100px);
-}
-
-.container .card:hover .face.face2{
-  transform: translateY(0);
-}
-
-.container .card .face.face2 .content p {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #414141;
-}
-
-.container .card .face.face2 .content h3 {
-  margin: 0 0 10px 0;
-  padding: 0;
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-  color: #414141;
-} 
-
-.container a {
+.content-left-container a, .content-right-container a
+{
   text-decoration: none;
-  color: #414141;
+  color: black;
 }
 
-footer
+b, strong {font-weight:bold !important;}
+
+/*
+.timeline-article .timeline-author 
 {
-  z-index: -100;
-  display: flex;
-  margin-top: 10px;
-  background-image: url("https://images.squarespace-cdn.com/content/v1/5223a766e4b0a07a9893b1cb/1478618020878-SD3K8QJUKS86VRJHLUXF/ke17ZwdGBToddI8pDm48kEH8NjoedwmXMWM1Y05RPZ17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iy8Rj2bPXFyaluz0PeKicM99XUAZZ4vYM9zGDkJVpGPVPvo6NH8fvxWQSfmZeQ4eQ/kathleen+nyn+banner+watercolor+2+medium.jpg?format=1500w");
-  /*background: #77A8B1;*/
-  height: 50px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: right;
+}
+*/
+
+.content-left-container .timeline-author
+{
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: left;
+  margin-left: 5px;
+}
+
+.content-right-container .timeline-author
+{
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.timeline-article .content-left,
+.timeline-article .content-right 
+{
   position: relative;
-  flex-direction: column;
-  justify-content: center; /*Horizontal alignment*/
-  align-items: center; /*Vertical alignment*/
+  width: auto;
+  border: 1px solid #ddd;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5223a766e4b0a07a9893b1cb/1478618020878-SD3K8QJUKS86VRJHLUXF/ke17ZwdGBToddI8pDm48kEH8NjoedwmXMWM1Y05RPZ17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iy8Rj2bPXFyaluz0PeKicM99XUAZZ4vYM9zGDkJVpGPVPvo6NH8fvxWQSfmZeQ4eQ/kathleen+nyn+banner+watercolor+2+medium.jpg?format=1500w");
+  /*background-color: #e6e6e6;*/
+  box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  padding: 27px 25px;
 }
 
-footer .endnote
+.timeline-article p 
 {
+  margin: 0 0 0 60px;
+  padding: 0;
+  font-weight: 400;
+  color: black;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+
+.timeline-article p span.article-number 
+{
+  position: absolute;
+  font-weight: 300;
+  font-size: 44px;
+  top: 10px;
+  left: -60px;
+  color: white;
+}
+
+.timeline-article .content-left-container 
+{
+  float: left;
+}
+.timeline-article .content-right-container 
+{
+  float: right;
+}
+.timeline-article .content-left:before,
+.timeline-article .content-right:before
+{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+
+.timeline-article .meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -31px;
+  color: #fff;
+  border-radius: 100%;
+  background: rgb(10,186,181);
+}
+.timeline-article .meta-date .date,
+.timeline-article .meta-date .month {
+  display: block;
   text-align: center;
-  font-size: 8pt;
+  font-weight: 900;
+}
+.timeline-article .meta-date .date {
+  font-size: 20px;
+  line-height: 40px;
+}
+.timeline-article .meta-date .month {
+  font-size: 15px;
+  line-height: 0px;
+}
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (min-width: 700px) 
+{
+  header .shortbio
+  {
+    display: none;
+  }
+  
+  header .longbio
+  {
+    font-family: playfair-display,serif;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    position: absolute;
+    top: 170px;
+    margin: 0 auto;
+  }
+
+  footer
+  {
+    margin-top: 10px;
+  }
 }
 
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 1000px) 
 {
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    margin: 0;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .timeline-article .meta-date {
+    margin-left: 0;
+    left: 20px;
+  }
+
+  #conference-timeline .conference-timeline-content 
+  {
+    padding-top: 0px;
+    padding-bottom: 67px;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    margin-right: 30px;
+    min-height: 53px;
+  }
+  .timeline-article .content-left-container {
+    margin-bottom: 20px;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .timeline-article .content-left:before {
+    content: "\f0d9";
+    right: auto;
+    left: -8px;
+  }
+  .timeline-article .content-right:before {
+    display: none;
+  }
+  .timeline-article .timeline-author 
+{
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: center;
+}
+
   header 
   {
       height: 210px;
@@ -614,38 +459,38 @@ footer .endnote
     border: 1px solid white;
   }
 
-  #skills-list-1
-  {
-    top: 0px;
-    left: 0px;
-    width: 80%;
-  }
   footer
   {
-    margin-top: 10px;
+    margin-top: -40px;
   }
-  
-}
 
-@media only screen and (min-width: 700px) 
-{
-  header .shortbio
-  {
+}
+@media only screen and (max-width: 400px) {
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article p span.article-number {
     display: none;
   }
   
-  header .longbio
-  {
-    font-family: playfair-display,serif;
-    font-weight: 400 !important;
-    font-style: italic !important;
-    position: absolute;
-    top: 170px;
-    margin: 0 auto;
-  }
+}
+/*===== // Resonsive Vertical Timeline =====*/
 
-  footer
-  {
-    margin-top: 10px;
-  }
+
+footer
+{
+  display: flex;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/5223a766e4b0a07a9893b1cb/1478618020878-SD3K8QJUKS86VRJHLUXF/ke17ZwdGBToddI8pDm48kEH8NjoedwmXMWM1Y05RPZ17gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iy8Rj2bPXFyaluz0PeKicM99XUAZZ4vYM9zGDkJVpGPVPvo6NH8fvxWQSfmZeQ4eQ/kathleen+nyn+banner+watercolor+2+medium.jpg?format=1500w");
+  /*background: #77A8B1;*/
+  height: 50px;
+  position: relative;
+  flex-direction: column;
+  justify-content: center; /*Horizontal alignment*/
+  align-items: center; /*Vertical alignment*/
+}
+
+footer .endnote
+{
+  text-align: center;
+  font-size: 8pt;
 }
