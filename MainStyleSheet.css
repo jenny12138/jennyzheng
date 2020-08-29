@@ -76,9 +76,10 @@ header .social-nav ul li a
   border: 3px solid white;
 }
 
-header .social-nav .sn-medium
+header .social-nav .sn-email
 {
-  background: url('./images/medium.svg') no-repeat 50% 50%;
+  background: url('./images/mail.svg') no-repeat 50% 50%;
+  background-size: 50%;
   background-color: #1DA1F2;
 }
 
@@ -124,7 +125,7 @@ section.about
 {
   margin-top: 50px;
   background-color: white;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .about h1
@@ -137,18 +138,30 @@ section.about
   margin-bottom: 10px;
 }
 
-.AboutMeContent
+.img-container 
 {
-  background-color: white;
-  display: flex; /*Using flexbox*/
-  position: relative;
-  flex-direction: row;
-  justify-content: center; /*Horizontal alignment*/
-  align-items: center; /*Vertical alignment*/
+  margin-top: 10px !important;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  line-height: 1;
+  padding: 0 0 10px; 
+  margin-bottom: 10px;
 }
 
 .ProfilePic
 {
+  left: 30%;
+  height: 250px;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  border: 2px white solid;
+  border: 5px solid rgba(10,186,181, 0.55);
+  padding: 2px;
+
+  /*border-radius: 50%;*/
+  /*
   float: left;
   margin-right: 10px;
   width:300px;
@@ -156,8 +169,36 @@ section.about
   box-sizing: content-box;
   border: 1px solid rgba(10,186,181, 0.55);
   /*border-radius: 3px;*/
+  /*
   padding: 3px;
+  */
 }
+
+.intro
+{
+  margin-top: 10px;
+  float: right;
+  margin-top: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: playfair-display, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 9;
+  border: 0px;
+}
+
+.AboutMeContent
+{
+    background-color: white;
+    display: flex; /*Using flexbox*/
+    flex-direction: column;
+    justify-content: space-between; /*Horizontal alignment*/
+    align-items: center; /*Vertical alignment*/
+}
+
+  
+b, strong {font-weight:bold !important;}
 
 footer
 {
@@ -292,7 +333,6 @@ footer .endnote
   {
     margin-top: 10px;
   }
-  
 }
 
 @media only screen and (min-width: 700px) 
@@ -300,18 +340,16 @@ footer .endnote
   .intro
   {
     float: right;
-    width:50%;
-    height:300px;
-    box-sizing: content-box;
-    border: 1px solid rgba(10,186,181, 0.55);
-    /*border-radius: 3px;*/
-    padding: 3px;
+    width:70%;
+    margin-top: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: playfair-display, serif;
     font-weight: 400;
     font-style: normal;
     font-size: 9;
+    border: 0px;
+    width: 50% !important;
   }
 
   header .shortbio
@@ -333,5 +371,11 @@ footer .endnote
   {
     margin-top: 10px;
   }
+
+html 
+{
+    height: 100%;
+}
+
 }
 
