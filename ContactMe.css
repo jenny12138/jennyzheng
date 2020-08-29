@@ -75,9 +75,10 @@ header .social-nav .sn-email
   background-color: #1DA1F2;
 }
 
-header .social-nav .sn-instagram 
+header .social-nav .sn-github
 {
-  background: url('./images/instagram2.svg') no-repeat 50% 50%;
+  background: url('./images/github.svg') no-repeat 55% 50%;
+  background-size: 60%;
   background-color: #E1306C;
 }
 
