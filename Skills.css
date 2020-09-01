@@ -324,6 +324,13 @@ section.AreasOfExperience
   background-position: center;
 }
 
+.container1 .card:nth-child(4) .icon {
+  background-image: url(./images/Certificates_Kaggle_ML.png);
+  background-size: 96%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 
 .container2 .card:nth-child(1) .icon {
   background-image: url(./images/CTL.png);
